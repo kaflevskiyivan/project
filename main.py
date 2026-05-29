@@ -56,11 +56,11 @@ with col_left:
         with col1:
             synth_amount = st.number_input("Transaction Amount", min_value=0.0, value=150.0, step=10.0)
             synth_hour = st.number_input("Transaction Hour", min_value=0, max_value=23, value=14)
-            synth_minute = st.number_input("Transaction Minute", min_value=0, max_value=59, value=30)
+            synth_minute = st.number_input("Transaction Minute", min_value=0, max_value=59, value=30, step=5)
         with col2:
-            synth_merchant = st.number_input("Merchant ID", min_value=-5.0, max_value=50.0, value=1.0)
+            synth_merchant = st.number_input("Merchant ID", min_value=-5.0, max_value=50.0, value=1.0, step=0.05)
             synth_day = st.number_input("Transaction Day", min_value=1, max_value=31, value=15)
-            synth_second = st.number_input("Transaction Second", min_value=0, max_value=59, value=0)
+            synth_second = st.number_input("Transaction Second", min_value=0, max_value=59, value=0, step=5)
         with col3:
             synth_month = st.number_input("Transaction Month", min_value=1, max_value=12, value=5)
             synth_year = st.number_input("Transaction Year", min_value=2000, max_value=2030, value=2024)
